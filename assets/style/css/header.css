@@ -1,0 +1,274 @@
+.nav-sections-item-content {
+  max-width: 1900px;
+  width: 100%;
+  margin: auto;
+}
+.nav-sections-items {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.nav-sections {
+  z-index: 99;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+.nav-sections .navigation {
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+}
+.nav-sections .navigation.zero_top {
+  top: 0px;
+}
+.nav-sections .navigation .nav-section-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+.nav-sections .navigation .nav-section-left .nav_bar {
+  justify-content: center;
+}
+.nav-sections .navigation .res_mobile {
+  display: none;
+}
+.nav-sections .navigation .nav-section-logo {
+  text-align: center;
+}
+.nav-sections .navigation .nav-section-right .nav-section-ctas {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: end;
+}
+.nav-sections .navigation .nav-section-right .nav-section-ctas .sell_car_cta .transparent_cta {
+  min-width: 9em;
+  padding: 5px 15px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #E61122;
+  font-weight: 500;
+}
+.nav-sections .navigation .nav-section-left .sell_car_cta {
+  display: none;
+}
+.nav-sections .navigation .nav-section .close_side_bar {
+  display: none;
+}
+.nav-sections .navigation .nav-section .nav_bar {
+  display: flex;
+  gap: 45px;
+}
+.nav-sections .navigation .nav-section .nav_bar li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  position: relative;
+  padding-block: 10px;
+}
+.nav-sections .navigation .nav-section .nav_bar li a {
+  font-size: 18px;
+  line-height: 26px;
+  color: #212121;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.nav-sections .navigation .nav-section .nav_bar li:hover > a {
+  color: #E61122;
+}
+.nav-sections .navigation .nav-section .nav_bar li:hover svg path {
+  fill: #E61122;
+}
+.nav-sections .navigation .nav-section .nav_bar .first_layer {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  left: 0px;
+  top: 100%;
+  min-width: 10em;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background-color: var(--primary_bg);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.nav-sections .navigation .nav-section .nav_bar:hover .first_layer {
+  display: block;
+}
+@media only screen and (max-width: 1024px) {
+  .nav-sections .navigation {
+    padding: 10px;
+    gap: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-sections .navigation .res_mobile {
+    display: block;
+  }
+  .nav-sections .navigation .nav-section-logo {
+    text-align: center;
+  }
+  .nav-sections .navigation .nav-section-logo img {
+    width: 50px;
+  }
+  .nav-sections .navigation .nav-section-right .nav-section-ctas {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: end;
+  }
+  .nav-sections .navigation .nav-section-right .nav-section-ctas .sell_car_cta {
+    display: none;
+  }
+  .nav-sections .navigation .nav-section-right .nav-section-ctas .sell_car_cta .transparent_cta {
+    min-width: 9em;
+    padding: 6px 15px;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .nav-sections .navigation .nav-section-left .sell_car_cta {
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+  }
+  .nav-sections .navigation .nav-section-left .sell_car_cta .transparent_cta {
+    min-width: 9em;
+    padding: 6px 15px;
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .nav-sections .navigation .nav-section .close_side_bar {
+    display: block;
+    text-align: end;
+  }
+  .nav-sections .navigation .nav-section .close_side_bar svg {
+    width: 20px;
+  }
+  .nav-sections .navigation .nav-section .nav_bar {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .nav-sections .navigation .nav-section .nav_bar li {
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-block: 10px;
+  }
+  .nav-sections .navigation .nav-section .nav_bar li a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .nav-sections .navigation .nav-section .nav_bar .first_layer {
+    position: static;
+    min-width: 100%;
+  }
+  .nav-sections .navigation .nav-section .nav_bar .drop_icon {
+    position: relative;
+  }
+  .nav-sections .navigation .nav-section .nav_bar .drop_icon svg {
+    width: 8px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-sections .navigation .nav-section-logo img {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1480px) {
+  .nav-sections .navigation {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .nav-sections .navigation .nav-section-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .nav-sections .navigation .nav-section-left .nav_bar {
+    justify-content: center;
+  }
+  .nav-sections .navigation .nav-section-right .nav-section-ctas {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: end;
+  }
+  .nav-sections .navigation .nav-section-right .nav-section-ctas .sell_car_cta .transparent_cta {
+    min-width: 8em;
+    padding: 6px 15px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .nav-sections .navigation .nav-section-left .sell_car_cta {
+    display: none;
+  }
+  .nav-sections .navigation .nav-section .close_side_bar {
+    display: none;
+  }
+  .nav-sections .navigation .nav-section .nav_bar {
+    display: flex;
+    gap: 20px;
+  }
+  .nav-sections .navigation .nav-section .nav_bar li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+  }
+  .nav-sections .navigation .nav-section .nav_bar li a {
+    font-size: 16px;
+    line-height: 23px;
+    color: #212121;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  .nav-sections .navigation .nav-section-logo img {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1480px) {
+  .nav-sections .navigation {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .nav-sections .navigation .nav-section-right .nav-section-ctas {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: end;
+  }
+  .nav-sections .navigation .nav-section-right .nav-section-ctas .sell_car_cta .transparent_cta {
+    min-width: 9em;
+    padding: 6px 15px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .nav-sections .navigation .nav-section-left .sell_car_cta {
+    display: none;
+  }
+  .nav-sections .navigation .nav-section .close_side_bar {
+    display: none;
+  }
+  .nav-sections .navigation .nav-section .nav_bar {
+    display: flex;
+    gap: 30px;
+  }
+  .nav-sections .navigation .nav-section-logo img {
+    width: 70%;
+  }
+}

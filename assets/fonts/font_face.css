@@ -1,0 +1,32 @@
+
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: url(../fonts/HelveticaNowDisplay-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: url(../fonts/HelveticaNowDisplay-Medium.ttf);
+    font-weight: 500;
+}
+
+
+@font-face {
+    font-family: 'Helvetica Now Display';
+    src: url(../fonts/HelveticaNowDisplay-Bold.ttf);
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(../fonts/sf-pro-display_regular.woff2);
+    font-weight: 400;
+}
+
+
+
+
+
+
